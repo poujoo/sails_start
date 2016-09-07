@@ -1,2 +1,3 @@
-# sails_start
-full blown sails server, modify and adapt to create new websites!
+# brushfire-ch15-end
+
+a [Sails](http://sailsjs.org) application
