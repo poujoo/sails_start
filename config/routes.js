@@ -25,59 +25,59 @@ module.exports.routes = {
   'PUT /user/update-deleted/:id': 'UserController.updateDeleted',
   'PUT /user/generate-recovery-email': 'UserController.generateRecoveryEmail',
   'PUT /user/reset-password': 'UserController.resetPassword',
-  'PUT /user/follow': 'UserController.follow',
-  'PUT /user/unfollow': 'UserController.unFollow',
+  // 'PUT /user/follow': 'UserController.follow',
+  // 'PUT /user/unfollow': 'UserController.unFollow',
 
-  'GET /tutorials': 'TutorialController.browseTutorials',
-  'POST /tutorials': 'TutorialController.createTutorial',
-  'POST /tutorials/:tutorialId/videos': 'TutorialController.addVideo',
-  'PUT /tutorials/:id': 'TutorialController.updateTutorial',
-  'PUT /tutorials/:id/rate': 'TutorialController.rateTutorial',
+  // 'GET /tutorials': 'TutorialController.browseTutorials',
+  // 'POST /tutorials': 'TutorialController.createTutorial',
+  // 'POST /tutorials/:tutorialId/videos': 'TutorialController.addVideo',
+  // 'PUT /tutorials/:id': 'TutorialController.updateTutorial',
+  // 'PUT /tutorials/:id/rate': 'TutorialController.rateTutorial',
 
-  'POST /videos/:id/chat': 'VideoController.chat',
-  'PUT /videos/:id/join': 'VideoController.joinChat',
-  'PUT /videos/:id/typing': 'VideoController.typing',
-  'PUT /videos/:id/stoppedTyping': 'VideoController.stoppedTyping',
+  // 'POST /videos/:id/chat': 'VideoController.chat',
+  // 'PUT /videos/:id/join': 'VideoController.joinChat',
+  // 'PUT /videos/:id/typing': 'VideoController.typing',
+  // 'PUT /videos/:id/stoppedTyping': 'VideoController.stoppedTyping',
 
-  'DELETE /tutorials/:id': 'TutorialController.deleteTutorial',
-  'DELETE /videos/:id': 'TutorialController.removeVideo',
+  // 'DELETE /tutorials/:id': 'TutorialController.deleteTutorial',
+  // 'DELETE /videos/:id': 'TutorialController.removeVideo',
 
-  'POST /videos/:id/up': 'VideoController.reorderVideoUp',
-  'POST /videos/:id/down': 'VideoController.reorderVideoDown',
-  'PUT /videos/:id': 'TutorialController.updateVideo',
+  // 'POST /videos/:id/up': 'VideoController.reorderVideoUp',
+  // 'POST /videos/:id/down': 'VideoController.reorderVideoDown',
+  // 'PUT /videos/:id': 'TutorialController.updateVideo',
 
-  /*************************************************************
-  * Server Rendered HTML Page Endpoints                        *
-  *************************************************************/
+  // /*************************************************************
+  // * Server Rendered HTML Page Endpoints                        *
+  // *************************************************************/
   
-  'GET /profile/followers': 'PageController.profileFollower',
+  // 'GET /profile/followers': 'PageController.profileFollower',
 
-  'GET /': 'PageController.home',
-  'GET /profile/edit': 'PageController.editProfile',
-  'GET /profile/restore': 'PageController.restoreProfile',
-  'GET /signin': 'PageController.signin',
-  'GET /signup': 'PageController.signup',
-  'GET /administration': 'PageController.administration',
+  // 'GET /': 'PageController.home',
+  // 'GET /profile/edit': 'PageController.editProfile',
+  // 'GET /profile/restore': 'PageController.restoreProfile',
+  // 'GET /signin': 'PageController.signin',
+  // 'GET /signup': 'PageController.signup',
+  // 'GET /administration': 'PageController.administration',
 
-  'GET /password-recovery-email': 'PageController.passwordRecoveryEmail',
-  'GET /password-recovery-email-sent': 'PageController.passwordRecoveryEmailSent',  
-  'GET /password-reset-form/:passwordRecoveryToken': 'PageController.passwordReset',
+  // 'GET /password-recovery-email': 'PageController.passwordRecoveryEmail',
+  // 'GET /password-recovery-email-sent': 'PageController.passwordRecoveryEmailSent',  
+  // 'GET /password-reset-form/:passwordRecoveryToken': 'PageController.passwordReset',
   
-  'GET /tutorials/search': 'TutorialController.searchTutorials',
-  'GET /tutorials/browse': 'PageController.showBrowsePage',
-  'GET /tutorials/new': 'PageController.newTutorial',
-  'GET /tutorials/:id': 'PageController.tutorialDetail',
-  'GET /tutorials/:id/edit': 'PageController.editTutorial',
-  'GET /tutorials/:id/videos/new': 'PageController.newVideo',
-  'GET /tutorials/:tutorialId/videos/:id/edit': 'PageController.editVideo',
-  'GET /tutorials/:tutorialId/videos/:id/show': 'PageController.showVideo',
+  // 'GET /tutorials/search': 'TutorialController.searchTutorials',
+  // 'GET /tutorials/browse': 'PageController.showBrowsePage',
+  // 'GET /tutorials/new': 'PageController.newTutorial',
+  // 'GET /tutorials/:id': 'PageController.tutorialDetail',
+  // 'GET /tutorials/:id/edit': 'PageController.editTutorial',
+  // 'GET /tutorials/:id/videos/new': 'PageController.newVideo',
+  // 'GET /tutorials/:tutorialId/videos/:id/edit': 'PageController.editVideo',
+  // 'GET /tutorials/:tutorialId/videos/:id/show': 'PageController.showVideo',
 
-  'GET /:username/followers': 'PageController.profileFollower',
-  'GET /:username/following': 'PageController.profileFollowing',
-  'GET /:username': {
-    controller: 'PageController',
-    action: 'profile',
-    skipAssets: true
-  }
+  // 'GET /:username/followers': 'PageController.profileFollower',
+  // 'GET /:username/following': 'PageController.profileFollowing',
+  // 'GET /:username': {
+  //   controller: 'PageController',
+  //   action: 'profile',
+  //   skipAssets: true
+  // }
   // 'GET /:username': 'PageController.profile',
 };

@@ -44,41 +44,6 @@ module.exports = {
       type: 'string'
     },
 
-    // tutorials: {
-    //   type: 'json'
-    // },
-
-    // tutorials: {
-    //   collection: 'tutorial',
-    // },
-
-    tutorials: {
-      collection: 'tutorial',
-      via: 'owner'
-    },
-
-    ratings: {
-      collection: 'rating',
-      via: 'byUser'
-    },
-
-    // Who is following me?
-    followers: {
-      collection: 'user',
-      via: 'following'
-    },
-
-    // Who am I following?
-    following: {
-      collection: 'user',
-      via: 'followers'
-    },
-
-    chats: {
-      collection: 'chat',
-      via: 'sender'
-    },
-
     toJSON: function() {
       var obj = this.toObject();
       delete obj.password;
